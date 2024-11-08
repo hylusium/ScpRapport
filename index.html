@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Rapport</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.10.3/html-to-image.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<img
+					src="data:image/png;base64,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"
+					alt="logo de la fondation scp"
+				/>
+			</div>
+			<div class="form">
+				<div class="date">
+					<div class="dateTexte">Date de l'intervention :</div>
+					<div class="dateInput">
+						<input type="datetime-local" name="dateIntervention" />
+					</div>
+				</div>
+				<div class="membrePresent">
+					<div class="membrePresentTexte">Membre Présent :</div>
+					<div class="membrePresentInput">
+						<input type="text" name="MembrePrésent" placeholder="John Doe" />
+					</div>
+				</div>
+				<div class="grade">
+					<div class="gradeTexte">Grade :</div>
+					<div class="gradeInput">
+						<select
+							name="Grade"
+							id="gradeSelect"
+							onchange="updateSelectedGrade()"
+						>
+							<option value="" selected disabled>Choisissez un grade</option>
+							<optgroup label="Agent de maintenance">
+								<option value="Apprenti Technicien">Apprenti Technicien</option>
+								<option value="Technicien">Technicien</option>
+								<option value="Technicien Senior">Technicien Senior</option>
+							</optgroup>
+							<optgroup label="Cadres">
+								<option value="Apprenti Ingénieur">Apprenti Ingénieur</option>
+								<option value="Superviseur Maintenance">
+									Superviseur De Maintenance
+								</option>
+								<option value="Ingénieur">Ingénieur</option>
+								<option value="Ingénieur En Chef">Ingénieur En Chef</option>
+								<option value="Directeur De Secteur">
+									Directeur De Secteur
+								</option>
+							</optgroup>
+							<optgroup label="Direction">
+								<option value="Directeur D'ingénierie">
+									Directeur D'ingénierie
+								</option>
+								<option value="Directeur Technique">Directeur Technique</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
+
+				<div class="departement">
+					<div class="departementTexte">Département :</div>
+					<div class="departementinput">
+						<select name="departement">
+							<option value="Maintenance" selected>Maintenance</option>
+							<option value="R&d">Recherche et développement</option>
+							<option value="Manufacture">Manufacture</option>
+						</select>
+					</div>
+				</div>
+				<div class="OtherDist">
+					<div class="otherDistText">Autre Personnel Présent :</div>
+					<div class="otherDistInput">
+						<input type="text" name="other" class="otherName" />
+					</div>
+				</div>
+				<div class="OtherNamePicker"></div>
+				<div class="catRepa">
+					<div class="catRepaText">Catégorie de réparation :</div>
+					<div class="catRepaInput">
+						<label>
+							<input type="checkbox" name="rang" class="rang" />
+							<span class="custom-checkbox"></span> Rang A
+						</label>
+						<label>
+							<input type="checkbox" name="rang" class="rang" />
+							<span class="custom-checkbox"></span> Rang B
+						</label>
+						<label>
+							<input type="checkbox" name="rang" class="rang" />
+							<span class="custom-checkbox"></span> Rang C
+						</label>
+						<label>
+							<input type="checkbox" name="rang" class="rang" />
+							<span class="custom-checkbox"></span> Rang D
+						</label>
+						<label>
+							<input type="checkbox" name="rang" class="rang" />
+							<span class="custom-checkbox"></span> Rang E
+						</label>
+					</div>
+				</div>
+				<div class="intervention">
+					<div class="interventionText">Descriptif de l'intervention :</div>
+					<div class="interventionInput">
+						<textarea
+							id="exportText"
+							name="mission"
+							cols="100"
+							oninput="Autogrow(this)"
+						></textarea>
+					</div>
+				</div>
+				<div class="materiel">
+					<div class="materieltext">Matériel utilisé :</div>
+					<div class="materielInput">
+						<input type="text" name="materiel" class="otherMateriel" />
+					</div>
+				</div>
+				<div class="othermaterielPicker"></div>
+				<div class="finReparation">
+					<div class="finReparationText">
+						Date et heure de fin de l'intervention :
+					</div>
+					<div class="finReparationInput">
+						<input type="datetime-local" name="fin" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buttonExport">
+			<button class="buttonToExport">Télécharger le rapport</button>
+		</div>
+	</body>
+</html>
+<script src="./NamePicker.js"></script>
+<script src="./nameErase.js"></script>
+<script src="./RangSelect.js"></script>
+<script src="./textAreaJob.js"></script>
+<script src="./materialPicker.js"></script>
+<script src="./ExporttoImage.js"></script>
+<script src="./SelectGrade.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
