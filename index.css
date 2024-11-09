@@ -1,21 +1,23 @@
 * {
 	font-family: "Roboto", serif;
+	color: black;
 }
 body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	margin: auto;
+	background-color: rgb(66, 69, 73);
 }
 .container {
-	margin-left: 5vh;
-	padding: 20vh;
-	background-color: white;
+	background-color: rgb(66, 69, 73);
+	display: flex;
+	flex-direction: row;
 }
 .form {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20vh;
+	margin-left: 10vh;
 	margin-top: 5vh;
 }
 
@@ -61,6 +63,7 @@ body {
 
 .name {
 	border: 1px solid black;
+	background-color: rgb(126, 126, 126);
 	border-radius: 16px;
 	min-width: 10vh;
 	max-width: 100%;
@@ -69,6 +72,9 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
+}
+.name p {
+	color: white;
 }
 .OtherNamePicker,
 .othermaterielPicker {
@@ -105,6 +111,7 @@ body {
 	margin-left: 10vh;
 	margin-top: 2vh;
 	min-height: 100px;
+	width: 70vh;
 }
 .buttonExport {
 	display: flex;
@@ -195,13 +202,13 @@ select:focus {
 /* Pour les groupes d'options */
 optgroup {
 	font-weight: bold; /* Appliquer un gras pour les groupes d'options */
-	color: #333; /* Couleur du texte des groupes */
+	/* Couleur du texte des groupes */
 }
 
 /* Option sélectionnée */
 option:checked {
 	background-color: #007bff; /* Fond bleu pour l'option sélectionnée */
-	color: white; /* Texte blanc pour l'option sélectionnée */
+	/* Texte blanc pour l'option sélectionnée */
 }
 textarea {
 	width: 100%;
@@ -213,4 +220,17 @@ textarea {
 	resize: vertical; /* Permet à l'utilisateur de redimensionner la hauteur */
 	background-color: #f9f9f9;
 	white-space: pre-line;
+}
+
+.gradeTexte,
+.dateTexte,
+.membrePresentTexte,
+.departementTexte,
+.otherDistText,
+.catRepaText,
+.interventionText,
+.materieltext,
+.finReparationText,
+label {
+	color: white;
 }

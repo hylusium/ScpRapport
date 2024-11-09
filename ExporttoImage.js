@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		const tempDiv = document.createElement("div");
 		tempDiv.classList.add("export-text");
 		tempDiv.textContent = textContent;
+		tempDiv.style.color = "white";
 
 		interventionInput.appendChild(tempDiv);
 		exportTextArea.style.display = "none";
