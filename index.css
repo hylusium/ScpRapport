@@ -8,17 +8,20 @@ body {
 	flex-direction: column;
 	margin: auto;
 	background-color: rgb(66, 69, 73);
+	max-width: 210mm;
+	padding: 0 10px;
 }
 .container {
 	background-color: rgb(66, 69, 73);
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	max-width: 210mm;
+	margin: auto;
 }
 .form {
 	display: flex;
 	flex-direction: column;
-	margin-left: 10vh;
-	margin-top: 5vh;
+	margin: 2vh 5vh;
 }
 
 .date,
@@ -59,6 +62,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: calc(100% - 0vh);
 }
 
 .name {
@@ -108,10 +112,11 @@ body {
 	resize: none;
 	overflow: hidden;
 	font-size: 15px;
-	margin-left: 10vh;
-	margin-top: 2vh;
 	min-height: 100px;
 	width: 70vh;
+	margin: 1vh auto;
+	width: calc(100% - 20px);
+	max-width: 100%;
 }
 .buttonExport {
 	display: flex;
@@ -180,35 +185,30 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 	transform: rotate(45deg);
 }
 
-/* Style global pour tous les éléments <select> */
 select {
-	font-family: "Roboto", sans-serif; /* Police Roboto */
-	padding: 10px 20px; /* Espacement à l'intérieur des menus déroulants */
-	font-size: 16px; /* Taille de police */
-	border-radius: 5px; /* Bords arrondis */
-	border: 1px solid #ccc; /* Bordure grise */
-	background-color: #f9f9f9; /* Fond clair */
-	transition: border-color 0.3s ease, background-color 0.3s ease; /* Transition pour une interaction plus fluide */
-	width: 100%; /* S'adapte à la largeur de son conteneur */
+	font-family: "Roboto", sans-serif;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	transition: border-color 0.3s ease, background-color 0.3s ease;
+	width: calc(100% - 20px);
+	max-width: 100%;
 }
 
-/* Effet au survol ou à la sélection */
 select:hover,
 select:focus {
-	border-color: #666; /* Bordure plus sombre quand l'élément est survolé ou sélectionné */
-	background-color: #fff; /* Changer la couleur de fond lorsque l'élément est actif */
+	border-color: #666;
+	background-color: #fff;
 }
 
-/* Pour les groupes d'options */
 optgroup {
-	font-weight: bold; /* Appliquer un gras pour les groupes d'options */
-	/* Couleur du texte des groupes */
+	font-weight: bold;
 }
 
-/* Option sélectionnée */
 option:checked {
-	background-color: #007bff; /* Fond bleu pour l'option sélectionnée */
-	/* Texte blanc pour l'option sélectionnée */
+	background-color: #007bff;
 }
 textarea {
 	width: 100%;
@@ -216,8 +216,8 @@ textarea {
 	border: 1px solid #ccc;
 	padding: 10px;
 	font-size: 16px;
-	box-sizing: border-box; /* pour inclure le padding dans la largeur et la hauteur */
-	resize: vertical; /* Permet à l'utilisateur de redimensionner la hauteur */
+	box-sizing: border-box;
+	resize: vertical;
 	background-color: #f9f9f9;
 	white-space: pre-line;
 }
